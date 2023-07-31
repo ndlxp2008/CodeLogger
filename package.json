@@ -1,0 +1,19 @@
+{
+  "name": "codelogger",
+  "version": "1.0.0",
+  "description": "代码学习和记录的一个自用网站，主要迭代目前的code知识和需要长期巩固的基础代码",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ndlxp2008/CodeLogger.git"
+  },
+  "author": "ndlxp2008",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/ndlxp2008/CodeLogger/issues"
+  },
+  "homepage": "https://github.com/ndlxp2008/CodeLogger#readme"
+}
