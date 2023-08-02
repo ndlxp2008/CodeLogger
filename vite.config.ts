@@ -1,3 +1,4 @@
+import * as path from 'path';
 import { defineConfig } from 'vite';
 
 import vue from '@vitejs/plugin-vue';
@@ -13,5 +14,10 @@ export default defineConfig({
         additionalData: '@import "./src/styles/index.scss";',
       },
     },
+  },
+  resolve: {
+    //设置别名
+    alias: [{ find: "@", replacement: path.resolve(__dirname, "src") }],
+    extensions: [".ts", ".js"],
   },
 });

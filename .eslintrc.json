@@ -5,7 +5,12 @@
     // 开启setup语法糖环境 👇
     "vue/setup-compiler-macros": true
   },
-  "extends": ["plugin:vue/vue3-recommended", "airbnb-base"],
+  "extends": [
+    "plugin:vue/vue3-recommended",
+    "airbnb-base",
+    "prettier",
+    "stylelint-config-prettier"
+  ],
   "parserOptions": {
     "ecmaVersion": "latest",
     "sourceType": "module"
