@@ -1,6 +1,13 @@
 # CodeLogger
 ## Eslint 代码质量约束
 
+:fire: vite+vue3+typescript+eslint构建骨架
+:fire: pinia存储
+:fire: tailwind通用样式
+:fire: element-plus通用组件
+
+
+
 yarn create vite
 
 yarn add vite
@@ -46,7 +53,54 @@ npx tailwindcss init -p
 
 # tailwindcss提示插件安装
 
+```
 
+# 构建element-plus+vite
 
 ```
+yarn add element-plus
+yarn add -D unplugin-vue-components unplugin-auto-import unplugin-element-plus
+
+
+#配置vite.config.x
+# import { defineConfig } from 'vite'
+# import vue from '@vitejs/plugin-vue'
+<!-- elementplus插件配置  -->
+# import ElementPlus from 'unplugin-element-plus/vite'
+<!-- 自动导入插件，需要配置 -->
+# import AutoImport from 'unplugin-auto-import/vite'
+<!-- 按需导入组件，需要配置 -->
+# import Components from 'unplugin-vue-components/vite'
+<!-- elementplus解析器，需要配置 -->
+# import { ElementPlusResolver } from 'unplugin-vue-components/resolvers'
+# 
+# export default defineConfig({
+#     plugins: [
+#         vue(),
+#         ElementPlus({
+#         // 引入的样式的类型，可以是css、sass、less等，
+#           importStyle: 'css',
+#           useSource: true
+#         }),Ï
+#         AutoImport({
+#               resolvers: [ElementPlusResolver()],
+#         }),
+#         Components({
+#               resolvers: [ElementPlusResolver()],
+#         }),
+#     ]
+# })
+
+```
+# 安装插件，配置插件
+
+yarn add -D vite-plugin-svg-icons
+
+yarn add -D @vitejs/plugin-vue
+
+yarn add -D @vitejs/plugin-vue-jsx
+
+yarn add -D unplugin-icons
+
+yarn add -D vite-plugin-inspect
 
