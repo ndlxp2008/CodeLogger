@@ -23,6 +23,11 @@ npx eslint --init
 yarn add sass -D
 ```
 
+# prettier统一格式化
+```
+yarn add  eslint-config-prettier -D
+```
+
 
 # 构建tailwindcss+vite
 
@@ -84,7 +89,7 @@ yarn add -D unplugin-vue-components unplugin-auto-import unplugin-element-plus
 #         }),Ï
 #         AutoImport({
 #               resolvers: [ElementPlusResolver()],
-#         }),
+#         })
 #         Components({
 #               resolvers: [ElementPlusResolver()],
 #         }),
