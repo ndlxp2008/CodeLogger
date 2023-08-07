@@ -9,9 +9,12 @@ declare module 'vue' {
   export interface GlobalComponents {
     ElButton: typeof import('element-plus/es')['ElButton']
     ElHeader: typeof import('element-plus/es')['ElHeader']
+    ElPagination: typeof import('element-plus/es')['ElPagination']
     ElRadio: typeof import('element-plus/es')['ElRadio']
     HelloWorld: typeof import('./src/components/HelloWorld.vue')['default']
+    Pagination: typeof import('./src/components/Pagination.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
+    TEditor: typeof import('./src/components/TEditor.vue')['default']
   }
 }

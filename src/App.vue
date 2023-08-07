@@ -1,15 +1,11 @@
-import HelloWorld from './components/HelloWorld.vue';
-
-<script setup lang="ts"></script>
-
+import Pagination from './components/Pagination'
 <template>
-  <HelloWorld msg="CodeLogger" />
   <h1 class="text-5xl font-bold underline">Hello CodeLogger!</h1>
-  <el-button type="primary">Button</el-button>
-  <el-radio label="aaa"></el-radio>
   <el-button type="primary" size="default" @click="test"></el-button>
+  <Pagination />
 </template>
 
+<script setup lang="ts"></script>
 <script setup lang="ts">
 function test() {
   console.log('test');
