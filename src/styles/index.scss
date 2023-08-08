@@ -1,1 +1,50 @@
-// 默认样式
+@charset "utf-8";
+
+// 引入重置样式
+@import './reset';
+
+// 动画
+@import './transition';
+
+// 公共样式
+
+// 整个滚动条
+::-webkit-scrollbar {
+  width: 4px;
+}
+
+// 滚动条上的滚动滑块
+::-webkit-scrollbar-thumb {
+  background-color: #87bfff;
+  border-radius: 6px;
+
+  &:hover {
+    background-color: #07f;
+  }
+}
+
+// 滚动条上的按钮
+::-webkit-scrollbar-button {
+  display: none;
+}
+
+.print-container {
+  box-sizing: border-box;
+  padding: 20px 20px 0;
+  width: 850px;
+  margin: 0 auto;
+}
+
+.module-title {
+  color: #666;
+  font-size: 20px;
+  margin: 10px 0;
+  height: 30px;
+  line-height: 30px;
+}
+
+.module-text {
+  color: #999;
+  font-size: 16px;
+  margin: 10px 0;
+}

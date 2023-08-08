@@ -45,7 +45,7 @@ npx tailwindcss init -p
 #  postcss: {
 #       plugins: [postcssImport, autoprefixer, tailwindcss],
 #     }
-# 
+#
 
 # 3.配置style.css
 # /*  tailwindcss */
@@ -78,7 +78,7 @@ yarn add -D unplugin-vue-components unplugin-auto-import unplugin-element-plus
 # import Components from 'unplugin-vue-components/vite'
 <!-- elementplus解析器，需要配置 -->
 # import { ElementPlusResolver } from 'unplugin-vue-components/resolvers'
-# 
+#
 # export default defineConfig({
 #     plugins: [
 #         vue(),
@@ -109,3 +109,8 @@ yarn add -D unplugin-icons
 
 yarn add -D vite-plugin-inspect
 
+# mock数据
+
+```
+yarn add mockjs -D
+```

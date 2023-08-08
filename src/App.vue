@@ -1,14 +1,16 @@
-import Pagination from './components/Pagination'
+
 <template>
   <h1 class="text-5xl font-bold underline">Hello CodeLogger!</h1>
   <el-button type="primary" size="default" @click="test"></el-button>
   <Pagination />
 </template>
 
-<script setup lang="ts"></script>
 <script setup lang="ts">
+import Pagination from '@/components/Pagination.vue'
+import { ElMessage } from 'element-plus'
 function test() {
   console.log('test');
+  ElMessage.warning('ssss');
 }
 </script>
 
