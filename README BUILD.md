@@ -6,8 +6,6 @@
 :fire: tailwind通用样式
 :fire: element-plus通用组件
 
-
-
 yarn create vite
 
 yarn add vite
@@ -42,21 +40,25 @@ npx tailwindcss init -p
 
 # 2.配置vite中css的postcss加载postcssImport, autoprefixer, tailwindcs插件
 
-#  postcss: {
-#       plugins: [postcssImport, autoprefixer, tailwindcss],
-#     }
-#
+  postcss: {
+       plugins: [postcssImport, autoprefixer, tailwindcss],
+     }
+
 
 # 3.配置style.css
-# /*  tailwindcss */
-# @tailwind base;
-# @tailwind components;
-# @tailwind utilities;
+/*  tailwindcss */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 
 # 如果出现 tailwind不能解析，那么首先看有没有配置好postcss,其次@tailwind在style文件中有没有声明，最后则看tailwindcss.config.x中是否配置合适的文件后缀
 
-# tailwindcss提示插件安装
+# 4.tailwindcss提示插件安装
+
+# 如果插件不提示，设置文件的关联语言即可，.vscode中的files.associations
+
+# 最简便的方法就是，files.associaions值为空，安装 Volar，自动匹配
 
 ```
 
@@ -113,4 +115,9 @@ yarn add -D vite-plugin-inspect
 
 ```
 yarn add mockjs -D
+```
+
+# 安装EditorConfig for VS Code插件
+```
+该插件试图用 .editorconfig 文件中的设置覆盖用户/工作区设置。不需要额外的或特定于 vscode 的文件。与其他 EditorConfig 插件一样，如果未指定 root=true，EditorConfig 将继续在项目外查找 .editorconfig 文件。
 ```

@@ -51,6 +51,7 @@
     "@types/node": "^20.4.5",
     "@vitejs/plugin-vue": "^4.2.3",
     "@vitejs/plugin-vue-jsx": "^3.0.1",
+    "echarts": "^5.4.3",
     "element-plus": "^2.3.9",
     "pinia": "^2.1.6",
     "vite": "^4.4.7",
