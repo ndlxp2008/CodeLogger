@@ -53,6 +53,7 @@
     "@vitejs/plugin-vue-jsx": "^3.0.1",
     "echarts": "^5.4.3",
     "element-plus": "^2.3.9",
+    "jsplumb": "^2.15.6",
     "pinia": "^2.1.6",
     "vite": "^4.4.7",
     "vue": "^3.3.4",
