@@ -14,9 +14,11 @@
 </template>
 
 <script setup lang="ts">
-import { ElMessage } from 'element-plus'
-import { useAppStore } from '@/store/index'
 import { reactive } from 'vue';
+
+import { ElMessage } from 'element-plus';
+
+import { useAppStore } from '@/store/index';
 
 const counter = useAppStore()
 
