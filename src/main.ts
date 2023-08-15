@@ -1,5 +1,6 @@
 import './style.css';
 import 'element-plus/dist/index.css';
+import '@/router/permission';
 
 import { createApp } from 'vue';
 
