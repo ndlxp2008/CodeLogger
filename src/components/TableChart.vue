@@ -1,6 +1,10 @@
 <script setup lang="ts">
-import { ref, onMounted } from 'vue'
-import * as echarts from 'echarts'
+import {
+  onMounted,
+  ref,
+} from 'vue';
+
+import * as echarts from 'echarts';
 
 type EChartsOption = echarts.EChartsOption
 const jurisdiction = sessionStorage.jurisdiction
