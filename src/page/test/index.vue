@@ -22,6 +22,7 @@ import { useAppStore } from '@/store/index';
 
 const counter = useAppStore()
 
+const router = useRouter()
 
 var a = reactive({
   test: 1,
@@ -29,6 +30,13 @@ var a = reactive({
 })
 
 function add() {
+  router.push({
+    path: '/learn',
+    query: {
+      message: '跳转携带参数',
+      a: 1
+    },
+  });
   a.test++
 }
 
