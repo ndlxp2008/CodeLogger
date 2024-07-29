@@ -1,8 +1,7 @@
-
 <template>
   <h1 class="text-5xl font-bold underline">Hello CodeLogger!</h1>
   <el-button type="success" size="default" @click="test(counter.testCount)">显示</el-button>
-  <el-button type="success" size="default" @click="counter.add">增加</el-button>
+  <el-button class="commont-front-size" type="success" size="default" @click="counter.add">增加</el-button>
   <el-button type="success" size="default" @click="counter.minus">减少</el-button>
   <el-button type="primary" size="default" >counter.testCount</el-button>
   <el-button type="primary" size="default" >{{ counter.testCount }}</el-button>
@@ -11,8 +10,15 @@
   <el-button type="success" size="default" @click="minus(a.test1)">减少</el-button>
   <el-button type ="primary" size="default" >{{ a.test }}</el-button>
   <el-button type="primary" size="default" >{{ a.test1 }}</el-button>
-</template>
+  <span class="commont-front-size">你是谁</span>
 
+
+  <ol>
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Milk</li>
+  </ol>
+</template>
 <script setup lang="ts">
 import { reactive } from 'vue';
 
@@ -52,20 +58,8 @@ function test(counter) {
   ElMessage.success(counter + "");
 }
 </script>
+<style lang="scss" scoped>
+.commont-front-size1 {
 
-<style scoped>
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-
-.logo.vue:hover {
-  filter: drop-shadow(0 0 2em #42b883aa);
 }
 </style>

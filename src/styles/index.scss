@@ -1,10 +1,10 @@
 @charset "utf-8";
 
 // 引入重置样式
-@import './reset';
+@import './reset.scss';
 
 // 动画
-@import './transition';
+@import './transition.scss';
 
 // 公共样式
 
@@ -47,4 +47,9 @@
   color: #999;
   font-size: 16px;
   margin: 10px 0;
+}
+
+.commont-front-size {
+  font-size: 100px;
+  color: red;
 }

@@ -1,13 +1,11 @@
 <script setup lang="ts">
 import NavBar from '@/layout/NavBar.vue';
-import SideBar from '@/layout/SideBar.vue';
 
 const route = useRoute()
 onMounted(() => { })
 </script>
 <template>
   <div class="app-container">
-    <SideBar class="left" />
     <div class="right">
       <NavBar />
       <div class="main bg-blue-600">
@@ -20,7 +18,6 @@ onMounted(() => { })
     </div>
   </div>
 </template>
-
 <style scoped lang="scss">
 .app-container {
   user-select: none;
